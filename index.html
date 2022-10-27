@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Teller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- audio to play the joke -->
+        <audio id="audio" controls hidden></audio>
+        <!-- choose joke type here -->
+        <span><label for="jokeType">Choose Type Of Joke: </label>
+        <select name="Joke Type" id="jokeType">
+            <option value="Programming">Programming</option>
+            <option value="Dark">Dark</option>
+            <option value="Pun">Pun</option>
+            <option value="Spooky">Spooky</option>
+            <option value="Christmas">Christmas</option>
+            <option value="Misc">Misc</option>
+        </select>
+        <button type="submit" id="submit">Tell Me A Joke</button>
+         </span>
+    </div>
+    <!-- Voice API File (as long as this runs before script.js we are able to use the global variable VoiceRSS) -->
+    <script src="voice.js"></script>
+    <!-- Main Script File -->
+    <script src="script.js"></script>
+</body>
+</html>
